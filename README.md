@@ -115,10 +115,10 @@ spring:
 ```
 
 ### 智谱AI接入
-1. 实现功能
+#### 实现功能
 - 智能生成应用题目
 - 智能评分
-2. 使用方法
+#### 使用方法
 - 登录智谱ai开放平台（https://open.bigmodel.cn/console/overview），获取自己的key
 - 修改 `application.yml` 的 ai 配置为你自己的key：
 
