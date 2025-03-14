@@ -1,4 +1,4 @@
-# AITesting：AI答题系统（仅后端部分）
+# AITesting：AI答题系统
 
 > 作者：[yuyuyu](https://github.com/shenglingyu)
 > 日期：2025-03-09
