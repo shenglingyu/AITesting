@@ -36,12 +36,13 @@
 
 ### 模块
 
-- 用户模块
-- 应用模块
-- 题目模块
-- 答案模块
-- 评分模块
-- 统计分析模块
+- 用户模块：用户登录、增删改查、管理
+- 应用模块：应用增删改查、管理
+- 题目模块：题目的增删改查、管理
+- 答案模块：创建答案和查看答案
+- 评分模块：创建评分策略以及对用户的答案进行评分
+- AI模块：AI生成题目、AI智能评分
+- 统计分析模块：热门应用统计、用户评分结果分布统计
 
 ### 核心业务流程
 
@@ -75,55 +76,4 @@
 
 - JUnit5 单元测试
 - 示例单元测试类
-
-### 架构设计
-
-- 合理分层
-
-## 项目的使用说明
-
-### MySQL 数据库
-
-1）修改 `application.yml` 的数据库配置为你自己的：
-
-```yml
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/yudada
-    username: root
-    password: 123456
-```
-
-2）执行 `sql/create_table.sql` 中的数据库语句，自动创建库表，执行init_data.sql初始化数据库表
-
-3）启动项目，访问 `http://localhost:8101/api/doc.html` 即可打开接口文档，不需要写前端就能在线调试接口了~
-
-![](doc/swagger.png)
-
-### Redis 分布式登录
-- 修改 `application.yml` 的 Redis 配置为你自己的：
-
-```yml
-spring:
-  redis:
-    database: 1
-    host: localhost
-    port: 6379
-    timeout: 5000
-    password: 123456
-```
-
-### 智谱AI接入
-#### 实现功能
-- 智能生成应用题目
-- 智能评分
-#### 使用方法
-- 登录智谱ai开放平台（https://open.bigmodel.cn/console/overview），获取自己的key
-- 修改 `application.yml` 的 ai 配置为你自己的key：
-
-```yml
-ai:
-  apiKey: XXX
-```
 
